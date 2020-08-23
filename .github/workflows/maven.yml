@@ -21,7 +21,7 @@ jobs:
     - name: Build project with Maven
       run: mvn -B package --file pom.xml
 
-    - name: Cache the Maven packages to speed up build
+    - name: Cache the Maven packages to speed up build and  publish
       uses: actions/cache@v1
       with:
         path: ~/.m2
